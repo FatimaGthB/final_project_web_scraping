@@ -8,9 +8,9 @@ Construct a tool that extracts news headlines from a website, giving hands-on ex
 
 In this section, I've worked on retrieving news headlines from the web using web scraping, by creating a function def get_news_headlines(url). The function returns the retrieved headlines in the form of a dictionary list.
 
-To do this, I used the BeautifulSoup library to interact with HTML and inspected the web page to see under which tag the data we wanted to retrieve was nested: soup.findAll(["h3"]).
+To do this, I used the BeautifulSoup library to interact with HTML and inspected the web page to see under which tag the data we wanted to retrieve was nested: soup.findAll(["a","h1", "h2","h3"])
 
-"h3" being the tag under which the titles are nested.
+
 
 I also used the Requests library for the given URL to retrieve the HTML data returned by the server and store this data in a Python object and check the response to the request: if response.status_code == 200 then the request was successful.
 

@@ -14,6 +14,8 @@ To do this, I used the BeautifulSoup library to interact with HTML and inspected
 
 I also used the Requests library for the given URL to retrieve the HTML data returned by the server and store this data in a Python object and check the response to the request: if response.status_code == 200 then the request was successful.
 
+ for better readability , i define a clean_text function  to clean the output of unwanted characters
+
 
 #### 2. Data Storage and Retrieval:
 
